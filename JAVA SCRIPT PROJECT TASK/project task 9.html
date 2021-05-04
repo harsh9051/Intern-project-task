@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Race Day</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var raceNumber = Math.floor(Math.random() * 1000);
+			var runner_reg = true;
+			var runner_age = 10;
+			if (runner_age>18 && runner_reg == true){
+				raceNumber += 1000;
+			}
+			if (runner_age > 18 && runner_reg === true){
+				console.log("They will race at 9:30 am. " + raceNumber);
+			}
+			else if (runner_age > 18 && runner_reg === false){
+				console.log("They will race at 11:00 am. " + raceNumber);
+			}
+			else if (runner_age < 18){
+				console.log("They will race at 12:30 pm. " + raceNumber);
+			}
+			else{
+				console.log("The runner to see the registration desk");
+			}
+			
+		</script>
+	</body>
+</html>
